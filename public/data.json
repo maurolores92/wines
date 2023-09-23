@@ -1,0 +1,105 @@
+{
+"descriptionMain": [
+{
+    "id":1,
+    "route": "home",
+    "description": "Discover the World Finest Unveiling Exquisite Wines From Across the Globe.",
+    "image": "/images/Links/vineyard_home3.png"
+},
+{
+    "id":2,
+    "route": "aboutUs",
+    "description": "Introducing a New Chapter in Wine Excellence: Connecting Artisans, Distrubutors, and Wine Enthusiasts.",
+    "image": "/images/Links/vineyard_home3.png"
+},
+{
+    "id":3,
+    "route": "contact",
+    "description": "Sip, Share, Connect: Join our Wine Nation, Contact Us.",
+    "image": "/images/Links/vineyard_home3.png"
+},
+{
+    "id":4,
+    "route": "ourBrands",
+    "title": "BARON DEL TANGO",
+    "description": "Where Wine and Tango Converge in Harmonious Elegance",
+    "image": "/images/baronDelTango/FONDOBARONDETANGO_111.jpg"
+}
+],
+
+"wines": [
+    {
+        "BaronDelTango": {
+          "title": "Baron Del Tango",
+          "type": "Cabernet Sauvignon",
+          "region": "Falasco Winery, Mendoza Argentina",
+          "image": "./images/baronDelTango/BT-CABERNET.png", 
+          "Tasting Notes": [
+            {
+              "Color": "Intense, purplish ruby red.",
+              "Aroma": "Spiced with berries and black fruit such as morello cherry and cassis. Notes of tobacco, chocolate and vanilla",
+              "Mouth": "Refined, good tannic character, deep, long aftertaste."
+            }],
+            "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
+            "Alc/Vol":"13.5%"
+          
+        }
+      }
+      
+],
+
+"winesType": [
+    {
+        "Baron Del Tango Reserva": [
+            {
+                "id": 1,
+                "image": "/images/baronDelTango/btCabernet1.png",
+                "title": "Cabernet Sauvignon"
+            },
+            {
+                "id": 2,
+                "image": "/images/baronDelTango/btMalbec1.png",
+                "title": "Malbec"
+            },
+            {
+                "id": 3,
+                "image": "/images/baronDelTango/btBlend.png",
+                "title": "Blend"
+            },
+            {
+                "id": 4,
+                "image": "/images/baronDelTango/btChardonnay.png",
+                "title": "Chardonnay"
+            }
+        ]
+    },
+    {
+        "Baron Del Tango Estate": [
+            {
+                "id": 1,
+                "image": "/images/baronDelTango/btCabernet.png",
+                "title": "Cabernet Sauvignon"
+            },
+            {
+                "id": 2,
+                "image": "/images/baronDelTango/btMalbec.png",
+                "title": "Malbec"
+            },
+            {
+                "id": 3,
+                "image": "/images/baronDelTango/btMerlot.png",
+                "title": "Blend"
+            },
+            {
+                "id": 4,
+                "image": "/images/baronDelTango/btChardonnay.png",
+                "title": "Chardonnay"
+            }
+        ]
+    }
+]
+
+}
+
+
+
