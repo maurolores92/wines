@@ -18,7 +18,7 @@ const BottonHome = () => {
 
       <Grid container sx={{ position: 'absolute', top: '30%', width:'60%', justifyContent:'center'}} spacing={2}>
         <Grid item xs={12}>
-          <Typography variant='h3' sx={{ fontFamily: 'Playfair Display', color: 'white', textAlign: 'center' }}>
+          <Typography variant='h4' sx={{ fontFamily: 'Playfair Display', color: 'white', textAlign: 'center' }}>
             Connecting Passionate Winemakers with Discerning Distributors
           </Typography>
         </Grid>
