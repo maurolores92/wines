@@ -8,7 +8,7 @@
 },
 {
     "id":2,
-    "route": "aboutUs",
+    "route": "about Us",
     "description": "Introducing a New Chapter in Wine Excellence: Connecting Artisans, Distrubutors, and Wine Enthusiasts.",
     "image": "/images/Links/vineyard_home3.png"
 },
@@ -27,13 +27,31 @@
 }
 ],
 
-"wines": [
+"baronDelTango": [
     {
-        "BaronDelTango": {
-          "title": "Baron Del Tango",
-          "type": "Cabernet Sauvignon",
+        "Reserva": [
+            {
+                "id": 1,
+                "image": "/images/baronDelTango/btCabernet1.png",
+                "title": "Cabernet Sauvignon",
+                "type": "Reserva",
+                "region": "Falasco Winery, Mendoza Argentina", 
+                "Tasting Notes": [
+                  {
+                    "Color": "Intense, purplish ruby red.",
+                    "Aroma": "Spiced with berries and black fruit such as morello cherry and cassis. Notes of tobacco, chocolate and vanilla",
+                    "Mouth": "Refined, good tannic character, deep, long aftertaste."
+                  }],
+                  "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
+                  "Alc/Vol":"13.5%"
+                
+              },
+            {
+                "id": 2,
+                "image": "/images/baronDelTango/btMalbec1.png",
+                "title": "Malbec",
+                "type": "Reserva",
           "region": "Falasco Winery, Mendoza Argentina",
-          "image": "./images/baronDelTango/BT-CABERNET.png", 
           "Tasting Notes": [
             {
               "Color": "Intense, purplish ruby red.",
@@ -43,57 +61,100 @@
             "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
             "Alc/Vol":"13.5%"
           
-        }
-      }
-      
-],
-
-"winesType": [
-    {
-        "Baron Del Tango Reserva": [
-            {
-                "id": 1,
-                "image": "/images/baronDelTango/btCabernet1.png",
-                "title": "Cabernet Sauvignon"
-            },
-            {
-                "id": 2,
-                "image": "/images/baronDelTango/btMalbec1.png",
-                "title": "Malbec"
             },
             {
                 "id": 3,
                 "image": "/images/baronDelTango/btBlend.png",
-                "title": "Blend"
+                "title": "Blend",
+                "type": "Reserva",
+                "region": "Falasco Winery, Mendoza Argentina", 
+                "Tasting Notes": [
+                  {
+                    "Color": "Intense, purplish ruby red.",
+                    "Aroma": "Spiced with berries and black fruit such as morello cherry and cassis. Notes of tobacco, chocolate and vanilla",
+                    "Mouth": "Refined, good tannic character, deep, long aftertaste."
+                  }],
+                  "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
+                  "Alc/Vol":"13.5%"
             },
             {
                 "id": 4,
                 "image": "/images/baronDelTango/btChardonnay.png",
-                "title": "Chardonnay"
+                "title": "Chardonnay",
+                "type": "Reserva",
+                "region": "Falasco Winery, Mendoza Argentina",
+                "Tasting Notes": [
+                  {
+                    "Color": "Intense, purplish ruby red.",
+                    "Aroma": "Spiced with berries and black fruit such as morello cherry and cassis. Notes of tobacco, chocolate and vanilla",
+                    "Mouth": "Refined, good tannic character, deep, long aftertaste."
+                  }],
+                  "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
+                  "Alc/Vol":"13.5%"
             }
         ]
     },
     {
-        "Baron Del Tango Estate": [
+        "Estate": [
             {
                 "id": 1,
                 "image": "/images/baronDelTango/btCabernet.png",
-                "title": "Cabernet Sauvignon"
+                "title": "Cabernet Sauvignon",
+                "type": "Estate",
+                "region": "Falasco Winery, Mendoza Argentina",
+                "Tasting Notes": [
+                  {
+                    "Color": "Intense, purplish ruby red.",
+                    "Aroma": "Spiced with berries and black fruit such as morello cherry and cassis. Notes of tobacco, chocolate and vanilla",
+                    "Mouth": "Refined, good tannic character, deep, long aftertaste."
+                  }],
+                  "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
+                  "Alc/Vol":"13.5%"
             },
             {
                 "id": 2,
                 "image": "/images/baronDelTango/btMalbec.png",
-                "title": "Malbec"
+                "title": "Malbec",
+                "type": "Estate",
+                "region": "Falasco Winery, Mendoza Argentina", 
+                "Tasting Notes": [
+                  {
+                    "Color": "Intense, purplish ruby red.",
+                    "Aroma": "Spiced with berries and black fruit such as morello cherry and cassis. Notes of tobacco, chocolate and vanilla",
+                    "Mouth": "Refined, good tannic character, deep, long aftertaste."
+                  }],
+                  "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
+                  "Alc/Vol":"13.5%"
             },
             {
                 "id": 3,
                 "image": "/images/baronDelTango/btMerlot.png",
-                "title": "Blend"
+                "title": "Blend",
+                "type": "Estate",
+                "region": "Falasco Winery, Mendoza Argentina",
+                "Tasting Notes": [
+                  {
+                    "Color": "Intense, purplish ruby red.",
+                    "Aroma": "Spiced with berries and black fruit such as morello cherry and cassis. Notes of tobacco, chocolate and vanilla",
+                    "Mouth": "Refined, good tannic character, deep, long aftertaste."
+                  }],
+                  "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
+                  "Alc/Vol":"13.5%"
             },
             {
                 "id": 4,
                 "image": "/images/baronDelTango/btChardonnay.png",
-                "title": "Chardonnay"
+                "title": "Chardonnay",
+                "type": "Estate",
+                "region": "Falasco Winery, Mendoza Argentina",
+                "Tasting Notes": [
+                  {
+                    "Color": "Intense, purplish ruby red.",
+                    "Aroma": "Spiced with berries and black fruit such as morello cherry and cassis. Notes of tobacco, chocolate and vanilla",
+                    "Mouth": "Refined, good tannic character, deep, long aftertaste."
+                  }],
+                  "Pairing": "Red meat, game, pasta with red sauce or pesto sauce, and semi-hard cheese.",
+                  "Alc/Vol":"13.5%"
             }
         ]
     }

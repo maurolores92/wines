@@ -1,6 +1,6 @@
 
 import Layout from '../../components/Layout';
-import Main from '../../views/home/main';
+import Main from '../../views/main';
 import { Box, Typography } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 
@@ -20,8 +20,8 @@ const OurBrandsPage: React.FC = () => {
     fetch('/data.json')
       .then((response) => response.json())
       .then((jsonData) => {
-        if (jsonData.winesType) {
-          setWinesData(jsonData.winesType);
+        if (jsonData.baronDelTango) {
+          setWinesData(jsonData.baronDelTango);
         }
       })
       .catch((error) => {
@@ -40,13 +40,13 @@ const OurBrandsPage: React.FC = () => {
         </Typography>
       </Box>
       <Box >
-        <Typography  sx={{fontFamily: 'Montserrat', textAlign:'left', margin:'2rem'}}>
+        <Typography  sx={{fontFamily: 'Montserrat', textAlign:'left', margin:'2rem auto'}}>
           Baron del Tango offers a collection of exceptional wines that reflect the spirit of this iconic dance. Our Cabernet Sauvignon features bold aromas of blackcurrant and 
           spice that seduce the palate with every sip. Malbec, with its sultry aromas of dark fruits and velvety tannins, will blow you away with its seductive charm. Our Red 
           Blend combines the different grape varieties in a seamless dance of vibrant flavors that create a harmonious picture on the palate. Our Chardonnay, on the other hand, 
           enchants with delicate nuances of tropical fruit and a subtle interplay of oak that exudes grace and finesse
         </Typography>
-        <Typography sx={{fontFamily: 'Montserrat', textAlign:'left',  margin:'2rem 2rem 0 2rem'}}>
+        <Typography sx={{fontFamily: 'Montserrat', textAlign:'left',  margin:'2rem auto'}}>
           Celebrate the timeless connection between the art of winemaking and the passion of tango with Baron del Tango. Let yourself be seduced by the seductive synergy of
            flavors, enjoy the embrace of the terroir of Mendoza, and let our wines be your partner to unleash the magic of the dance. Experience the rhythmic poetry of baron 
            del tango and embark on a journey of elegance and magic
@@ -60,7 +60,7 @@ const OurBrandsPage: React.FC = () => {
   >
     <Box>
       <Typography variant='h5' sx={{ fontFamily: 'Playfair Display', textAlign: 'left', fontWeight: 'bold', color: '#792c4b' }}>
-        {Object.keys(wineCategory)[0]}
+      <u>Baron del Tango</u> {Object.keys(wineCategory)[0]}
       </Typography>
     </Box>
     <Box sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>

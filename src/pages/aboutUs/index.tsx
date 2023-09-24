@@ -1,7 +1,7 @@
 // pages/index.tsx
 import React from 'react';
 import Layout from '../../components/Layout';
-import Main from '../../views/home/main';
+import Main from '../../views/main';
 import { Box, Typography } from '@mui/material';
 
 const AboutUsPage: React.FC = () => {

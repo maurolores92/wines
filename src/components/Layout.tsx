@@ -9,7 +9,6 @@ import {
   MenuItem,
   Button,
 } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import { useRouter } from 'next/router';
 
 interface LayoutProps {
@@ -48,7 +47,7 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
               variant="h6"
               noWrap
               component="a"
-              href="/"
+              href="/home"
               sx={{
                 fontFamily: 'monospace',
                 fontWeight: 700,

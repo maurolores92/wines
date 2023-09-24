@@ -33,3 +33,41 @@
     font-family: 'Playfair Display', serif;
     font-weight: bold;
   }
+
+
+  /* Estilos para los botones del carrusel */
+.carousel .control-arrow::before {
+  font-size: 25px;
+  color: grey; /* Color de los botones grises */
+  transform: rotate(45deg); /* Gira el icono para convertirlo en un rombo */
+}
+
+.carousel .control-next.control-arrow::before,
+.carousel .control-prev.control-arrow::before {
+  content: none; /* Oculta los botones de flecha predeterminados */
+}
+
+.carousel .carousel-status {
+  display: none; /* Oculta el indicador de estado */
+}
+
+/* ajute del formulario para mobile */
+
+@media (max-width: 765px) {
+  form {
+    height: 60vh; /* Altura ajustada para pantallas pequeñas */
+  }
+}
+
+/* ajute del titulo del main para version mobile */
+
+/* Consulta de medios para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .my-component h5 {
+    font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+
+  .my-component h4 {
+    font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
