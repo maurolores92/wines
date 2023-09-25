@@ -5,6 +5,7 @@ import Main from '../../views/main';
 import BottonHome from '../../views/bottonHome';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CarouselHome from '../../views/carrousel';
+import Footer from '../../components/footer';
 
 const HomePage: React.FC = () => {
 
@@ -14,6 +15,7 @@ const HomePage: React.FC = () => {
       <Main/>
       <CarouselHome/>
       <BottonHome/>
+      <Footer />
     </Layout>
   );
 }; 

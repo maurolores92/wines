@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import Main from '../../views/main';
 import { Box, Typography } from '@mui/material';
+import Footer from '../../components/footer';
 
 const AboutUsPage: React.FC = () => {
   const currentPage = 'aboutUs';
@@ -55,7 +56,9 @@ const AboutUsPage: React.FC = () => {
             </Box>
           </Box>
         </Box>
+        <Footer />
     </Layout>
+    
   );
 };
 

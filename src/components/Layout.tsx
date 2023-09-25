@@ -10,6 +10,7 @@ import {
   Button, Drawer, IconButton
 } from '@mui/material';
 import { useRouter } from 'next/router';
+import Footer from './footer';
 
 interface LayoutProps {
   children: ReactNode;
@@ -94,23 +95,13 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
         </Toolbar>
         
       </AppBar>
-      <Container
-        style={{
-          maxWidth: 'none',
-          paddingLeft: 0,
-          paddingRight: 0,
-          maxHeight: '600px',
-          
-        }}
-      >
-        {children}
-      </Container>
       <Menu
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
         onClose={handleCloseNavMenu}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
         transformOrigin={{ vertical: 'top', horizontal: 'left' }}>
+          
       
         <Box sx={{display:'flex', backgroundColor: '#792c4b', color: 'white'}}>
           <Box sx={{padding:'2rem'}}>
@@ -132,7 +123,20 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
           </Box>
         </Box>
       </Menu>
+      <Container
+        style={{
+          maxWidth: 'none',
+          paddingLeft: 0,
+          paddingRight: 0,
+          maxHeight: '600px',
+          
+        }}
+      >
+        {children}
+      </Container>
+      
     </Box>
+    
   );
 };
 

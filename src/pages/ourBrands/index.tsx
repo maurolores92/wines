@@ -1,5 +1,6 @@
 
 import Layout from '../../components/Layout';
+import Footer from '../../components/footer';
 import Main from '../../views/main';
 import { Box, Typography, Grid } from '@mui/material';
 import React, { useState, useEffect } from 'react';
@@ -78,6 +79,7 @@ const OurBrandsPage: React.FC = () => {
         </Grid>
       ))}
     </Grid>
+    <Footer/>
     </Layout>
   );
 };

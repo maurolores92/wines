@@ -4,6 +4,7 @@ import Layout from '../../components/Layout';
 import Main from '../../views/main';
 import { Box } from '@mui/material';
 import ContactForm from '../../views/formContac';
+import Footer from '../../components/footer';
 
 
 const ContactPage: React.FC = () => {
@@ -14,6 +15,7 @@ const ContactPage: React.FC = () => {
       <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin:'2rem' }}>
       <ContactForm/>
     </Box>
+    <Footer />
     </Layout>
   );
 };
