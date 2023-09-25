@@ -7,7 +7,7 @@ import {
   Box,
   Menu,
   MenuItem,
-  Button,
+  Button, Drawer, IconButton
 } from '@mui/material';
 import { useRouter } from 'next/router';
 
@@ -21,6 +21,7 @@ const pages = ['home', 'ourBrands', 'aboutUs', 'contact'];
 const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
   const router = useRouter();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -29,6 +30,15 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
   const handleCloseNavMenu = () => {
     setAnchorEl(null);
   };
+
+    const handleOpenMobileMenu = () => {
+    setIsMobileMenuOpen(true);
+  };
+
+  const handleCloseMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
 
   const StylesWines = {
     textDecoration: 'none',
@@ -40,25 +50,10 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
 
   return (
     <Box>
-      <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+      <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
         <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'center' }}>
           <Box>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/home"
-              sx={{
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: '#792c4b',
-                textDecoration: 'none',
-                paddingRight: '1.5rem',
-              }}
-            >
-              LOGO
-            </Typography>
+            <img src="/images/logo-wine-nation.svg" alt="" style={{width:'100px', height:'60px', margin:'0 2rem'}} />
           </Box>
           <Box sx={{ display: 'flex' }}>
             {pages.map((page, index) => (
@@ -97,6 +92,7 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
             ))}
           </Box>
         </Toolbar>
+        
       </AppBar>
       <Container
         style={{
@@ -104,6 +100,7 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
           paddingLeft: 0,
           paddingRight: 0,
           maxHeight: '600px',
+          
         }}
       >
         {children}

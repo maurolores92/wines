@@ -9,8 +9,8 @@ const AboutUsPage: React.FC = () => {
   return (
     <Layout currentPage={currentPage}>
         <Main/>
-        <Box   sx={{maxWidth: '100vh', margin:'2rem auto' }}>
-          <Typography variant="h4" sx={{fontFamily: 'Playfair Display', fontStyle: 'italic', margin:'1rem', textAlign: 'center' }}>
+        <Box   sx={{maxWidth: '100vh', margin:'2rem auto'  }}>
+          <Typography variant="h4" sx={{fontFamily: 'Playfair Display', fontStyle: 'italic', margin:'2rem', textAlign: 'center' }}>
             At our cutting-edge company we've meticulously handpicked extraordinary winemakers spanning the breahtaking landscapes of Italy, Spain and Argentina.
           </Typography>
           <Box className="aboutUs-responsive" sx={{ display: 'flex', alignItems: 'center' }}>

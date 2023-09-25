@@ -7,12 +7,14 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     // Redirigir a la página /home solo si la ruta actual es '/'
-    if (router.pathname === '/') {
+    if (router.pathname === '/' && typeof window !== 'undefined') {
       router.push('/home');
     }
-  }, [router.pathname]);
+  }, []);
 
   return <Component {...pageProps} />;
 }
 
 export default MyApp;
+
+

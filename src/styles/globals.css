@@ -17,6 +17,10 @@
     width: 100%; /* Establece el ancho al 100% del viewport */
     max-width: 100%; /* Asegúrate de que no se desborde el ancho del viewport */
     overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal si existe contenido que se desborda */
+    background-image: url('/images/fondo-layout.svg');
+    background-size: cover;
+    background-position: center;
+    
   }
   
   a {
@@ -28,10 +32,7 @@
     list-style: none;
   }
   
-  /* Estilos de encabezados y párrafos */
-  h1, h2, h3, h4, h5, h6 {
-    
-  }
+
 
 
   /* Estilos para los botones del carrusel */
@@ -78,6 +79,10 @@
   }
 
   .mobile-img-none {
+    display: none;
+  }
+
+  .ourBrands-none {
     display: none;
   }
 
