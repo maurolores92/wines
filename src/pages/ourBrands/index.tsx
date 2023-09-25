@@ -41,9 +41,7 @@ const OurBrandsPage: React.FC = () => {
       </Box>
       <Box >
         <Typography  sx={{fontFamily: 'Montserrat', textAlign:'left', margin:'2rem auto'}}>
-          Baron del Tango offers a collection of exceptional wines that reflect the spirit of this iconic dance. Our Cabernet Sauvignon features bold aromas of blackcurrant and 
-          spice that seduce the palate with every sip. Malbec, with its sultry aromas of dark fruits and velvety tannins, will blow you away with its seductive charm. Our Red 
-          Blend combines the different grape varieties in a seamless dance of vibrant flavors that create a harmonious picture on the palate. Our Chardonnay, on the other hand, 
+          Baron del Tango offers a collection of exceptional wines that reflect the spirirmonious picture on the palate. Our Chardonnay, on the other hand, 
           enchants with delicate nuances of tropical fruit and a subtle interplay of oak that exudes grace and finesse
         </Typography>
         <Typography sx={{fontFamily: 'Montserrat', textAlign:'left',  margin:'2rem auto'}}>

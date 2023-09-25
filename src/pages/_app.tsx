@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    // Redirigir a la página /home solo si no hay una ruta actual
+    // Redirigir a la página /home solo si la ruta actual es '/'
     if (router.pathname === '/') {
       router.push('/home');
     }

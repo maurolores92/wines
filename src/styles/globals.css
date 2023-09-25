@@ -30,8 +30,7 @@
   
   /* Estilos de encabezados y párrafos */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    
   }
 
 
@@ -53,21 +52,73 @@
 
 /* ajute del formulario para mobile */
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   form {
     height: 60vh; /* Altura ajustada para pantallas pequeñas */
   }
+  .MuiTypography-h5 {
+    font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
+
+  .MuiTypography-h4 {
+    font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
+
+  .aboutUs-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .responsive-image-main {
+    height: 15rem;
+  }
+
+  .mobile-img-none {
+    display: none;
+  }
+
 }
 
-/* ajute del titulo del main para version mobile */
 
-/* Consulta de medios para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .my-component h5 {
-    font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mobile-img-aboutus {
+    display: block;
   }
 
-  .my-component h4 {
-    font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  .mobile-img-block {
+    display: none;
   }
+
+  
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+.MuiTypography-h4 {
+  font-size: 24px;
+
+
+}.responsive-image-main {
+  height: 350px;
+}
+
+.mobile-img-block {
+  display: none;
+}
+
+
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .mobile-img-block {
+    display: none;
+  }
+
+
+
 }

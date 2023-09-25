@@ -35,11 +35,13 @@ const Main: React.FC = () => {
     <img
       src={backgroundImage}
       alt="Background Image"
+      className="responsive-image-main"
       style={{
         width: '100%',
         clipPath: 'polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%)',
       }}
     />
+
     {currentData && (
       <Typography
         variant="h5"
