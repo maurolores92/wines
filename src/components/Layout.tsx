@@ -7,10 +7,12 @@ import {
   Box,
   Menu,
   MenuItem,
-  Button, Drawer, IconButton
+  Button,
+  Drawer,
+  IconButton,
 } from '@mui/material';
 import { useRouter } from 'next/router';
-import Footer from './footer';
+import MenuIcon from '@mui/icons-material/Menu'; 
 
 interface LayoutProps {
   children: ReactNode;
@@ -32,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
     setAnchorEl(null);
   };
 
-    const handleOpenMobileMenu = () => {
+  const handleOpenMobileMenu = () => {
     setIsMobileMenuOpen(true);
   };
 
@@ -40,23 +42,23 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
     setIsMobileMenuOpen(false);
   };
 
-
   const StylesWines = {
     textDecoration: 'none',
     color: 'inherit',
-    paddin:'0', 
+    padding: '0',
     fontFamily: 'Montserrat',
   };
-  
 
   return (
     <Box>
+      <Box>
       <AppBar position="static" sx={{ backgroundColor: 'white', boxShadow: 'none' }}>
-        <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'center' }}>
-          <Box>
+        <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Box sx={{  display: 'flex', margin: '0 auto', color: '#792c4b'}}>
+        <Box>
             <img src="/images/logo-wine-nation.svg" alt="" style={{width:'100px', height:'60px', margin:'0 2rem'}} />
           </Box>
-          <Box sx={{ display: 'flex' }}>
+          <Box sx={{  display: { xs: 'none', sm: 'flex' } }}>
             {pages.map((page, index) => (
               <React.Fragment key={page}>
                 {page === 'ourBrands' ? (
@@ -92,9 +94,52 @@ const Layout: React.FC<LayoutProps> = ({ currentPage, children }) => {
               </React.Fragment>
             ))}
           </Box>
+          </Box>
+          {/* Mobile Menu Icon */}
+          <IconButton
+            onClick={handleOpenMobileMenu}
+            sx={{ display: { xs: 'block', sm: 'none', color: '#792c4b' } }}
+          >
+            <MenuIcon />
+          </IconButton>
         </Toolbar>
-        
       </AppBar>
+
+      {/* Mobile Menu Drawer */}
+      <Drawer anchor="right" open={isMobileMenuOpen} onClose={handleCloseMobileMenu}>
+        
+        <Box
+          sx={{
+            width: 250,
+            padding: '1rem',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          {pages.map((page) => (
+            <Button
+              key={page}
+              onClick={() => {
+                handleCloseMobileMenu();
+                router.push(`/${page}`);
+              }}
+              sx={{
+                my: 2,
+                color: currentPage === page ? 'white' : '#792c4b',
+                fontWeight: 'bold',
+                backgroundColor: currentPage === page ? '#792c4b' : 'transparent',
+                padding: '0 1.5rem',
+                width: '100%',
+                textAlign: 'left',
+              }}
+            >
+              {page}
+            </Button>
+          ))}
+        </Box>
+      </Drawer>
+    </Box>
       <Menu
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}

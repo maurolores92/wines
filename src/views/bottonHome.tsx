@@ -1,6 +1,17 @@
 import React from 'react';
 import { Box, Typography, Grid } from '@mui/material';
 
+const StylesLogos = {
+  width: '120px', 
+  height: '50px', 
+  margin:'1rem',
+  '@media (max-width: 768px)': {
+    width: '80px', 
+    height: '20px',
+    margin: '0.5rem',
+  },
+};
+
 const BottonHome = () => {
 
   return (
@@ -27,36 +38,36 @@ const BottonHome = () => {
             Meet some of the distributors who trusted in your Wine brands
           </Typography>
         </Grid>
-        <Grid item xs={8} container justifyContent='center'>
+        <Grid item xs={20} sm={8} container justifyContent='center'>
           <Grid item>
-            <img src="images/Links/logo Bravo supermercado.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/logo Bravo supermercado.png" alt="" style={StylesLogos} />
           </Grid>
           <Grid item>
-            <img src="images/Links/LOGO COSTCO.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/LOGO COSTCO.png" alt="" style={StylesLogos} />
           </Grid>
           <Grid item>
-            <img src="images/Links//Logo CVS.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links//Logo CVS.png" alt="" style={StylesLogos} />
           </Grid>
           <Grid item>
-            <img src="images/Links/LOGO MEGA WINE.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/LOGO MEGA WINE.png" alt="" style={StylesLogos} />
           </Grid>
           <Grid item>
-            <img src="images/Links/LOGO NAVARRO.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/LOGO NAVARRO.png" alt="" style={StylesLogos} />
           </Grid>
           <Grid item>
-            <img src="images/Links/LOGO PRESIDENTE.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/LOGO PRESIDENTE.png" alt="" style={StylesLogos}/>
           </Grid>
           <Grid item>
-            <img src="images/Links/LOGO PUBLIX.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/LOGO PUBLIX.png" alt="" style={StylesLogos} />
           </Grid>
           <Grid item>
-            <img src="images/Links/logo sabor tropical.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/logo sabor tropical.png" alt="" style={StylesLogos} />
           </Grid>
           <Grid item>
-            <img src="images/Links/LOGO SEDANOS.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/LOGO SEDANOS.png" alt="" style={StylesLogos} />
           </Grid>
           <Grid item>
-            <img src="images/Links/LOGO WINNIE DIXIE.png" alt="" style={{ width: '120px', height: '50px', margin:'1rem' }} />
+            <img src="images/Links/LOGO WINNIE DIXIE.png" alt="" style={StylesLogos} />
           </Grid>
         </Grid>
       </Grid>

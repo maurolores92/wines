@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
+
 function CarouselHome() {
     const carouselItems = [
         {
@@ -43,24 +44,22 @@ function CarouselHome() {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                margin: '4rem auto',
+                margin: '4rem 2rem',
                 }}
             >
                 <Box sx={{ marginRight: '2rem' }}>
-                <Typography variant='h3' sx={{ fontFamily: 'Playfair Display', fontStyle: 'italic' }}>
-                    {item.title}
-                </Typography>
-                <Typography sx={{ fontSize: '0.7rem', display: 'flex', justifyContent: 'right' }}>
-                    {item.subtitle}
-                </Typography>
+                  <Typography variant='h3' sx={{ fontFamily: 'Playfair Display', fontStyle: 'italic' }}>
+                      {item.title}
+                  </Typography>
+                  <Typography sx={{ fontSize: '0.7rem', display: 'flex', justifyContent: 'right' }}>
+                      {item.subtitle}
+                  </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'right', borderRadius: '.7rem' }}>
-                <Button variant='outlined'>
-                    {item.buttonText}
-                </Button>
+                  <Button variant='outlined'> {item.buttonText} </Button>
                 </Box>
                 </Box>
-                <Box>
-                <img src={item.image} alt="" style={{ width: '120px' }} />
+                <Box >
+                  <img src={item.image} alt="" style={{ width: '120px',  height: 'auto' }} />
                 </Box>
             </Box>
             </div>
