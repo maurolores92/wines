@@ -11,26 +11,30 @@ function CarouselHome() {
         {
           title: 'Valduero',
           subtitle: 'BODEGAS Y VIÑEROS',
+          imageTitle: '/images/carrousel/logo01valduero.png',
           buttonText: 'LEARN MORE',
-          image: '/images/baronDelTango/btCabernet.png',
+          image: '/images/carrousel/01valduero.png',
         },
         {
           title: 'Valduero',
           subtitle: 'BODEGAS Y VIÑEROS',
+          imageTitle: '/images/carrousel/logo02trus.png',
           buttonText: 'LEARN MORE',
-          image: '/images/baronDelTango/btCabernet.png',
+          image: '/images/carrousel/02trust.png',
         },
         {
           title: 'Valduero',
           subtitle: 'BODEGAS Y VIÑEROS',
+          imageTitle: '/images/carrousel/logo03btmalbec.png',
           buttonText: 'LEARN MORE',
-          image: '/images/baronDelTango/btCabernet.png',
+          image: '/images/carrousel/03btmalbec.png',
         },
         {
           title: 'Valduero',
           subtitle: 'BODEGAS Y VIÑEROS',
+          imageTitle: '/images/carrousel/logo04filipetti.png',
           buttonText: 'LEARN MORE',
-          image: '/images/baronDelTango/btCabernet.png',
+          image: '/images/carrousel/04filipetti.png',
         },
         
       ];
@@ -48,18 +52,14 @@ function CarouselHome() {
                 }}
             >
                 <Box sx={{ marginRight: '2rem' }}>
-                  <Typography variant='h3' sx={{ fontFamily: 'Playfair Display', fontStyle: 'italic' }}>
-                      {item.title}
-                  </Typography>
-                  <Typography sx={{ fontSize: '0.7rem', display: 'flex', justifyContent: 'right' }}>
-                      {item.subtitle}
-                  </Typography>
-                <Box sx={{ display: 'flex', justifyContent: 'right', borderRadius: '.7rem' }}>
+                  <img src={item.imageTitle} alt="" style={{maxWidth:'400px'}} />
+                     
+                <Box sx={{ display: 'flex', justifyContent: 'center', borderRadius: '.7rem' }}>
                   <Button variant='outlined'> {item.buttonText} </Button>
                 </Box>
                 </Box>
                 <Box >
-                  <img src={item.image} alt="" style={{ width: '120px',  height: 'auto' }} />
+                  <img src={item.image} alt="" style={{ width: '100px',  height: 'auto' }} />
                 </Box>
             </Box>
             </div>

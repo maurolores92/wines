@@ -54,12 +54,13 @@ const OurBrandsPage: React.FC = () => {
       {winesData.map((wineCategory) => (
         <Grid
           key={Object.keys(wineCategory)[0]}
+          sx={{ maxWidth: '100vh', flexDirection: 'column', textAlign: 'center' }}
+        >
+          <Grid
+          item 
           container
           spacing={2}
-          item
-          sx={{ maxWidth: '100vh', margin: '1rem auto', flexDirection: 'column', textAlign: 'center' }}
-        >
-          <Grid item>
+          sx={{margin:'2rem auto'}}>
             <Typography variant='h5' sx={{ fontFamily: 'Playfair Display', textAlign: 'left', fontWeight: 'bold', color: '#792c4b' }}>
               <u>Baron del Tango</u> {Object.keys(wineCategory)[0]}
             </Typography>
