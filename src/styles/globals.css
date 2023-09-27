@@ -57,15 +57,14 @@
   form {
     height: 60vh; /* Altura ajustada para pantallas pequeñas */
   }
-  .MuiTypography-h5 {
-    font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  .MuiTypography-h5, .MuiTypography-h4{
+    font-size: 18px;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
   }
 
-  .MuiTypography-h4 {
-    font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
-    font-family: 'Playfair Display', serif;
+  .MuiTypography-h6 {
+    font-size: 18px;
     font-weight: bold;
   }
 
@@ -98,10 +97,18 @@
     display: none;
   }
 
-  
+  .MuiTypography-h5, .MuiTypography-h4{
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
+
+  .MuiTypography-h6 {
+    font-size: 18px;
+    font-weight: bold;
+  }
 
 }
-
 
 @media (min-width: 1024px) and (max-width: 1280px) {
 .MuiTypography-h4 {

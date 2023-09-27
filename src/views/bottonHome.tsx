@@ -15,14 +15,8 @@ const logosLinks = {
 };
 
 const StylesLogos = {
-  width: '120px', 
-  height: '50px', 
-  margin:'1rem',
-  '@media (max-width: 768px)': {
-    width: '80px', 
-    height: '20px',
-    margin: '0.5rem',
-  },
+  width: '100px', 
+  height: '30px'
 };
 
 const BottonHome = () => {
@@ -40,26 +34,26 @@ const BottonHome = () => {
       }}
     />
 
-<Grid container sx={{ position: 'absolute', top: '30%', width:'60%', justifyContent:'center'}} spacing={2}>
-        <Grid item xs={12}>
-          <Typography variant='h4' sx={{ fontFamily: 'Playfair Display', color: 'white', textAlign: 'center' }}>
+<Grid container sx={{ position: 'absolute', top: '30%', width:'100%', justifyContent:'center'}} spacing={2}>
+        <Grid item xs={18}>
+          <Typography variant='h4' sx={{ color: 'white', textAlign: 'center' }}>
             Connecting Passionate Winemakers with Discerning Distributors
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={8}>
           <Typography variant='h6' sx={{ color: 'white', textAlign: 'center' }}>
             Meet some of the distributors who trusted in your Wine brands
           </Typography>
         </Grid>
-        <Grid item xs={20} sm={8} container justifyContent='center'>
+        <Grid container>
           {Object.keys(logosLinks).map((logoKey) => (
-            <Grid item key={logoKey}>
-              <img
-                src={logosLinks[logoKey]}
-                alt={`Logo ${logoKey}`}
-                style={StylesLogos}
-              />
-            </Grid>
+              <Grid item key={logoKey}>
+             <img
+               src={logosLinks[logoKey]}
+               alt={`Logo ${logoKey}`}
+               style={StylesLogos}
+             />
+           </Grid>
           ))}
         </Grid>
       </Grid>
