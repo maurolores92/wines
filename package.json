@@ -4,9 +4,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "type-check": "tsc"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
